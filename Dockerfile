@@ -1,7 +1,7 @@
 FROM ruby:2.3.1
 
 RUN apt-get update
-RUN apt-get install -y mysql-client
+RUN apt-get install -y nodejs mysql-client
 RUN mkdir /tax-calculator
 COPY Gemfile /tax-calculator/Gemfile
 COPY Gemfile.lock /tax-calculator/Gemfile.lock
