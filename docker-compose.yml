@@ -9,9 +9,7 @@ services:
       MYSQL_DATABASE: tax_calculator
       MYSQL_ROOT_PASSWORD: alwayshandsomebro
   web:
-    build:
-      context: ./compose/web
-      dockerfile: web.dockerfile
+    build: ./
     volumes:
       -  ./:/tax-calculator
     ports:
