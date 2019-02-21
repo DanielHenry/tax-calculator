@@ -13,7 +13,7 @@ services:
       context: ./compose/web
       dockerfile: web.dockerfile
     volumes:
-      -  ./:/var/www
+      -  ./:/tax-calculator
     ports:
       - "3000:3000"
     links:
