@@ -10,4 +10,4 @@ RUN bundle install
 COPY . /tax-calculator
 
 # Start the main process.
-CMD ["rails", "server", "-b", "127.0.0.1"]
+CMD ["rails", "server", "-b", "0.0.0.0"]
