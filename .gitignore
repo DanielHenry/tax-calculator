@@ -33,3 +33,10 @@
 # Ignore all vendorfiles
 /vendor/*
 !/vendor/.keep
+
+# Ignore vim temporary files
+*~
+
+# Ignore vim swap files
+*.swp
+*.swo
