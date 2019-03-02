@@ -1,2 +1,15 @@
 dist: trusty
 language: ruby
+
+ruby:
+  - 2.3.1
+
+services:
+  - mysql:5.7
+
+before_script:
+  - bundle install
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
+
+script:
+  - bundle exec rspec
