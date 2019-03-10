@@ -12,4 +12,4 @@ before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
 
 script:
-  - bundle exec rspec .
+  - bundle exec bin/rspec
