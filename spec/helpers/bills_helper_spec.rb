@@ -11,5 +11,9 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe BillsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+    context 'blank test' do
+        it 'is guaranteed to be success.' do
+            a = 3
+        end
+    end
 end
